@@ -45,4 +45,10 @@ for(let index = 0; index < questions.length; index++){
 }
 
 console.log("-------------------------------------");
-console.log("Congratulations " + userName + " your final score is: " + userScore);
+switch(userScore) {
+  case 0: console.log("You should know about your country, your score is: " + userScore);
+          break;
+  case 5: console.log("Congratulations " + userName + " your score is: " + userScore);
+          break; 
+  default: console.log("You know your country very well and the final score is: " + userScore);              
+}
